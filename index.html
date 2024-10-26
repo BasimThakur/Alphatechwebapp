@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bladeless Fan Control App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Background Video -->
+        <video autoplay muted id="background-video">
+            <source src="https://cdn.pixabay.com/video/2023/06/17/167569-837244635_large.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="header">
+            <div id="greet">Hey, Basim!</div>
+            <div id="temperature">32°C</div>
+        </div>
+
+        <!-- Fan Controls -->
+        <h2>Fan Controls</h2>
+        <div class="controls">
+            <div class="button-group">
+                <button class="btn btn-primary" id="fan-on">Fan ON</button>
+                <button class="btn btn-primary" id="fan-off">Fan OFF</button>
+            </div>
+            <div class="button-group">
+                <button class="btn" id="fan-slow">Slow</button>
+                <button class="btn" id="fan-medium">Medium</button>
+                <button class="btn" id="fan-fast">Fast</button>
+            </div>
+        </div>
+
+        <!-- Light Controls -->
+        <h2>Light Controls</h2>
+        <div class="light-controls">
+            <div class="button-group">
+                <button class="btn light-mode-btn" id="light-on">Light ON</button>
+                <button class="btn light-mode-btn" id="light-off">Light OFF</button>
+            </div>
+            <div class="button-group">
+                <button class="btn" id="light-low">Low</button>
+                <button class="btn" id="light-medium">Medium</button>
+                <button class="btn" id="light-high">High</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
